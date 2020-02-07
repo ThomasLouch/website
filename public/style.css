@@ -1,0 +1,106 @@
+html {
+    background: #f1cbff;
+}
+
+html, button, select {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+button {
+    border: none;
+    background: #e1f7d5;
+    padding: 5px;
+}
+
+h2 {
+    margin: 5px 0px;
+}
+
+h3 {
+    margin: 2px 0px;
+}
+
+button, select {
+    font-size: 16px;
+}
+
+.new-game-form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    /*justify-content: center;*/
+}
+
+.new-game-form select, .new-game-form button {
+    margin: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+header h1 {
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    margin-top: 2em;
+}
+
+.arrow-buttons {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.arrow-button {
+    height: 50px;
+    width: 50px;
+    margin: 2px 0px;
+}
+
+.pause-note {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    canvas {
+        width: 400px;
+        border: 6px solid white;
+    }
+
+    footer {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .options {
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 900px) {
+    .pause-note {
+        display: block;
+    }
+
+    svg.game-board {
+        width: 500px;
+    }
+
+    .arrow-buttons {
+        display: none;
+    }
+}
+
+.instructions {
+    font-size: 20px;
+}

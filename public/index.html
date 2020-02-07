@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-33832647-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-33832647-3');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Snake in Elm</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
+  </head>
+  <body>
+    <main></main>
+    <script src="https://unpkg.com/elm-canvas@2.2/elm-canvas.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript">
+      var app = Elm.Main.init({ node: document.querySelector('main') })
+    </script>
+  </body>
+</html>
